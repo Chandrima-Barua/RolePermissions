@@ -1,0 +1,22 @@
+Install dependencies: npm install 
+Start the server: npm start
+GET Request to Retrieve Roles: http://localhost:3000/roles
+GET Request to Retrieve Permissions: http://localhost:3000/permissions
+POST Request to Set Permissions for a Role: http://localhost:3000/roles/:roleId/permissions
+
+Example POST URL: http://localhost:3000/roles/346a3cce-49d4-4e3c-bade-a16ed44b98bb/permissions
+JSON Body Example: 
+{
+  "permissions": [
+    {
+      "id": "706ee8e3-6034-4f27-ab20-4397ad874a09",
+      "name": "Read Data"
+    },
+    {
+      "id": "72e1c7be-4c2f-4ed1-bc7b-41519b35e429",
+      "name": "Write Data"
+    }
+  ]
+}
+
+
